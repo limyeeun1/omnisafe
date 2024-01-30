@@ -26,7 +26,7 @@ if __name__ == '__main__':
         '--algo',
         type=str,
         metavar='ALGO',
-        default='PPOLag',
+        default='DDPG',#PPOLag
         help='algorithm to train',
         choices=omnisafe.ALGORITHMS['all'],
     )
@@ -34,7 +34,7 @@ if __name__ == '__main__':
         '--env-id',
         type=str,
         metavar='ENV',
-        default='SafetyPointGoal1-v0',
+        default='SafetyRacecarGoal0-v0',#'SafetyPointGoal1-v0'
         help='the name of test environment',
     )
     parser.add_argument(
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--total-steps',
         type=int,
-        default=10000000,
+        default=2000000,#10000000
         metavar='STEPS',
         help='total number of steps to train for algorithm',
     )

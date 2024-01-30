@@ -18,7 +18,7 @@ from omnisafe.common.statistics_tools import StatisticsTools
 
 
 # just fill in the path in which experiment grid runs.
-PATH = ''
+PATH = '/home/limyeeun/src/omnisafe/examples/runs/DDPG_C-{SafetyRacecarGoal0-v0}/seed-000-2024-01-18-10-45-42/progress.csv'
 if __name__ == '__main__':
     st = StatisticsTools()
     st.load_source(PATH)

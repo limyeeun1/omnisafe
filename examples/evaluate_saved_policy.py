@@ -21,8 +21,11 @@ import omnisafe
 
 # Just fill your experiment's log directory in here.
 # Such as: ~/omnisafe/examples/runs/PPOLag-{SafetyPointGoal1-v0}/seed-000-2023-03-07-20-25-48
-LOG_DIR = ''
+LOG_DIR = '/home/limyeeun/src/omnisafe/examples/runs/DDPG-{SafetyRacecarGoal0-v0}/seed-000-2024-01-24-13-13-48'
+
+
 if __name__ == '__main__':
+    print(os.getcwd())
     evaluator = omnisafe.Evaluator(render_mode='rgb_array')
     scan_dir = os.scandir(os.path.join(LOG_DIR, 'torch_save'))
     for item in scan_dir:
@@ -30,7 +33,7 @@ if __name__ == '__main__':
             evaluator.load_saved(
                 save_dir=LOG_DIR,
                 model_name=item.name,
-                camera_name='track',
+                camera_id=1,
                 width=256,
                 height=256,
             )
