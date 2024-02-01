@@ -67,7 +67,7 @@ defaults:
     # The exploration noise
     exploration_noise: 0.1
     # use cost
-    use_cost: False
+    use_cost: True
   # logger configurations
   logger_cfgs:
     # use wandb for logging

@@ -18,7 +18,8 @@ from omnisafe.common.statistics_tools import StatisticsTools
 
 
 # just fill in the path in which experiment grid runs.
-PATH = '/home/limyeeun/src/omnisafe/examples/runs/DDPG_C-{SafetyRacecarGoal0-v0}/seed-000-2024-01-18-10-45-42/progress.csv'
+PATH = '/home/limyeeun/src/omnisafe/examples/runs/DDPG-{SafetyRacecarGoal0-v0}/seed-000-2024-01-30-17-48-39'
+
 if __name__ == '__main__':
     st = StatisticsTools()
     st.load_source(PATH)
@@ -27,4 +28,4 @@ if __name__ == '__main__':
     # or you can just specify how many values you want to compare in single graph at most,
     # and the function will automatically generate all possible combinations of the graph.
     # but the two mode can not be used at the same time.
-    st.draw_graph(parameter='', values=None, compare_num=2, cost_limit=None, show_image=True)
+    st.draw_graph(parameter='Loss_pi', values=None, compare_num=2, cost_limit=None, show_image=True)

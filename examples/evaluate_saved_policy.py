@@ -21,7 +21,7 @@ import omnisafe
 
 # Just fill your experiment's log directory in here.
 # Such as: ~/omnisafe/examples/runs/PPOLag-{SafetyPointGoal1-v0}/seed-000-2023-03-07-20-25-48
-LOG_DIR = '/home/limyeeun/src/omnisafe/examples/runs/DDPG-{SafetyRacecarGoal0-v0}/seed-000-2024-01-24-13-13-48'
+LOG_DIR = '/home/limyeeun/src/omnisafe/examples/runs/DDPG-{SafetyRacecarGoal0-v0}/seed-000-2024-01-31-13-52-40'
 
 
 if __name__ == '__main__':
